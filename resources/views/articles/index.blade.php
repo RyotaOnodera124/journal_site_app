@@ -14,5 +14,8 @@
             <a href="/articles/{{ $article->id }}">{{ $article->title }}</a><br>
         @endforeach
     </ul>
+
+    <!-- 新規論文投稿へジャンプする -->
+    <button onclick='location.href="{{ route("articles.create") }}"'>新規論文投稿</button>
 </body>
 </html>
